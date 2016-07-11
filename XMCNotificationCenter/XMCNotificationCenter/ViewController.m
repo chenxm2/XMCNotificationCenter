@@ -7,9 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "TestViewController.h"
 #import "XMCNotificationCenter.h"
-@interface ViewController () <TestViewControllerObserver>
+@interface ViewController ()
 
 @end
 
@@ -18,9 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    AddObserverWithProtocol(self, TestViewControllerObserver);
-    
-//    RemoveObserverWithProtocol(self, TestViewControllerObserver);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,15 +26,6 @@
     
 }
 - (IBAction)buttonClicked:(id)sender {
-    TestViewController *controller = [[TestViewController alloc] init];
-    [self presentViewController:controller animated:YES completion:nil];
-}
-
-#pragma mark - TestViewControllerObserver
-
-- (void)testViewController:(TestViewController *)controller buttonClicked:(UIButton *)button
-{
-    NSLog(@"%s", __func__);
 }
 
 

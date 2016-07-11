@@ -14,7 +14,7 @@ static void ObserversCallbackFunc(const void *_key, const void *_value, void *co
 
 struct ObserverContext {
     __weak XMCNotificationCenter *center;
-    __weak id observer;
+    __unsafe_unretained id observer;
 };
 
 @interface XMCNotificationCenter ()

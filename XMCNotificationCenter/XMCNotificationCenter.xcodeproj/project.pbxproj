@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BDDB941D33773B00792436 /* XMCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BDDB931D33773B00792436 /* XMCClass.m */; };
 		47D2DD271D2B8F72006EFE46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD261D2B8F72006EFE46 /* main.m */; };
 		47D2DD2A1D2B8F72006EFE46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD291D2B8F72006EFE46 /* AppDelegate.m */; };
 		47D2DD2D1D2B8F72006EFE46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD2C1D2B8F72006EFE46 /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		47D2DD401D2B8F72006EFE46 /* XMCNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD3F1D2B8F72006EFE46 /* XMCNotificationCenterTests.m */; };
 		47D2DD4B1D2B8F72006EFE46 /* XMCNotificationCenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD4A1D2B8F72006EFE46 /* XMCNotificationCenterUITests.m */; };
 		47D2DD5A1D2B8F9E006EFE46 /* XMCNotificationCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD591D2B8F9E006EFE46 /* XMCNotificationCenter.mm */; };
-		47D2DD5E1D2BBF3B006EFE46 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D2DD5C1D2BBF3B006EFE46 /* TestViewController.m */; };
 		47D2DD5F1D2BBF3B006EFE46 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D2DD5D1D2BBF3B006EFE46 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47BDDB921D33773B00792436 /* XMCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCClass.h; sourceTree = "<group>"; };
+		47BDDB931D33773B00792436 /* XMCClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCClass.m; sourceTree = "<group>"; };
+		47BDDB951D3377A900792436 /* XMCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCProtocol.h; sourceTree = "<group>"; };
 		47D2DD221D2B8F72006EFE46 /* XMCNotificationCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMCNotificationCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D2DD261D2B8F72006EFE46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47D2DD281D2B8F72006EFE46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,8 +59,6 @@
 		47D2DD4C1D2B8F72006EFE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D2DD581D2B8F9E006EFE46 /* XMCNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCNotificationCenter.h; sourceTree = "<group>"; };
 		47D2DD591D2B8F9E006EFE46 /* XMCNotificationCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XMCNotificationCenter.mm; sourceTree = "<group>"; };
-		47D2DD5B1D2BBF3B006EFE46 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		47D2DD5C1D2BBF3B006EFE46 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		47D2DD5D1D2BBF3B006EFE46 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,8 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				47D2DD601D2BBF47006EFE46 /* XMCNotificationCenter */,
-				47D2DD5B1D2BBF3B006EFE46 /* TestViewController.h */,
-				47D2DD5C1D2BBF3B006EFE46 /* TestViewController.m */,
 				47D2DD5D1D2BBF3B006EFE46 /* TestViewController.xib */,
 				47D2DD281D2B8F72006EFE46 /* AppDelegate.h */,
 				47D2DD291D2B8F72006EFE46 /* AppDelegate.m */,
@@ -139,6 +138,9 @@
 			children = (
 				47D2DD3F1D2B8F72006EFE46 /* XMCNotificationCenterTests.m */,
 				47D2DD411D2B8F72006EFE46 /* Info.plist */,
+				47BDDB921D33773B00792436 /* XMCClass.h */,
+				47BDDB931D33773B00792436 /* XMCClass.m */,
+				47BDDB951D3377A900792436 /* XMCProtocol.h */,
 			);
 			path = XMCNotificationCenterTests;
 			sourceTree = "<group>";
@@ -292,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D2DD5E1D2BBF3B006EFE46 /* TestViewController.m in Sources */,
 				47D2DD2D1D2B8F72006EFE46 /* ViewController.m in Sources */,
 				47D2DD2A1D2B8F72006EFE46 /* AppDelegate.m in Sources */,
 				47D2DD5A1D2B8F9E006EFE46 /* XMCNotificationCenter.mm in Sources */,
@@ -305,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D2DD401D2B8F72006EFE46 /* XMCNotificationCenterTests.m in Sources */,
+				47BDDB941D33773B00792436 /* XMCClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +524,7 @@
 				47D2DD511D2B8F72006EFE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D2DD521D2B8F72006EFE46 /* Build configuration list for PBXNativeTarget "XMCNotificationCenterTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +533,7 @@
 				47D2DD541D2B8F72006EFE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D2DD551D2B8F72006EFE46 /* Build configuration list for PBXNativeTarget "XMCNotificationCenterUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +542,7 @@
 				47D2DD571D2B8F72006EFE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

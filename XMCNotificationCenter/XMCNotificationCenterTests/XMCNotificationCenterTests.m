@@ -7,21 +7,39 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "XMCNotificationCenter.h"
+#import "XMCClass.h"
 
 @interface XMCNotificationCenterTests : XCTestCase
-
+@property (nonatomic, strong) XMCClass *xmcObject;
 @end
 
 @implementation XMCNotificationCenterTests
 
 - (void)setUp {
     [super setUp];
+    NSLog(@"%s", __func__);
+
     // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+
+- (void)testXMCNotificationCenter
+{
+    _xmcObject = [[XMCClass alloc] init];
+    NSArray *array = [[XMCNotificationCenter defaultCenter] observersWithProtocolKey:@protocol(XMCProtocol)];
+    XCTAssertEqual(1, [array count]);
+    id object = [array objectAtIndex:0];
+    XCTAssertEqualObjects(object, _xmcObject);
+    PostNotification(XMCProtocol, @selector(onUserNameChangedWithOldName:newName:), onUserNameChangedWithOldName:@"oldName" newName:@"newName");
+    _xmcObject = nil;
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+    NSArray *array = [[XMCNotificationCenter defaultCenter] observersWithProtocolKey:@protocol(XMCProtocol)];
+    XCTAssertEqual(0, [array count]);
 }
 
 - (void)testExample {
