@@ -37,8 +37,8 @@ To Solve these two，I write XMCNotificationCenter<br/>
 XMCNotificationCenterWhich method small, simple to use, first define protocols such as UserObserver, and add methods which need to implement, as required or optional method can be<br/>
 Then there is the ruler, just use PostNotification, parameters are SEL of method, method calls (where there will be a prompt for XCode).
 <br/>
-Finally is the observer, using AddObserver With Protocol to add your own need to observe the protocol and implemented the method you need, if a method is optional, and you didn't implemented you will not receive notification。
-
+Finally is the observer, using AddObserver With Protocol to add your own need to observe the protocol and implemented the method you need, if a method is optional, and you didn't implemented you will not receive notification。<br/>
+Because a lot of system behavior post by NSNotificationCenter, so XMCNotificationCenter can not completely replace NSNotificationCenter. However, if the notice is post by ourselves, the we can use XMCNotificationCenter
 
 
 ##中文
@@ -75,5 +75,6 @@ Finally is the observer, using AddObserver With Protocol to add your own need to
 
 XMCNotificationCenter里面方法不多，使用简单，先定义协议如UserObserver,并添加里面需要实现的方法，方法为required或optional都可以<br/>
 接下来就是通知者，只要使用PostNotification宏，参数分别是协议、方法的SEL、方法调用（这里还会有XCode的提示输入）。<br/>
-最后就是观察者，使用AddObserverWithProtocol添加自己需要观察的协议，并实现协议相关方法，如果是optional的方法，不实现也就不会接收到通知。
+最后就是观察者，使用AddObserverWithProtocol添加自己需要观察的协议，并实现协议相关方法，如果是optional的方法，不实现也就不会接收到通知。<br/>
+因为系统很多行为是靠NSNotificationCenter通知出来的,所以XMCNotificationCenter不能完全替代NSNotificationCenter。但如果通知是由我们自己发出，都可以使用XMCNotificationCenter。
     
