@@ -21,6 +21,7 @@
 1.对于接收同一个事件的通知，不同的人可能会用不同的方法名，无法统一。<br/>
 2.对于多参数的通知写列多代码，如要定义取信息的Key。<br/>
 出于以上两点，写了这个XMCNotificationCenter，对应上面情况会变成以下<br/>
+
     发通知一方
     @protocol UserObserver <NSObject>
     - (void)userNameChangedWithOldName:(NSString *)oldName newName:(NSString *)newName;
