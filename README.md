@@ -30,7 +30,7 @@ To Solve these two，I write XMCNotificationCenter<br/>
     PostNotification(UserObserver, @selector(userNameChangedWithOldName:newName:), userNameChangedWithOldName:@"oldName", newName:@"newName");
 
     Get Notification
-    AddObserverWithProtocol(self, UserObserver);并实现UserObserver协议的userNameChangedWithOldName:newName:方法即可
+    AddObserverWithProtocol(self, UserObserver);implement the method userNameChangedWithOldName:newName: in UserObserver Protocol
     RemoveObserver(self);
 
 
